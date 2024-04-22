@@ -1,7 +1,7 @@
 
 # matployDraw  
 
-con MatployDraw se aplica la librería matploy para la generación de gráficos estadísticos masivos a partir de la lectura de datos en formato json.
+MatployDraw aplica la librería matploy para la generación de gráficos estadísticos masivos a partir de la lectura de datos en formato json.
 
 En la demo (demo.py) vemos que tan solo nos pide la ubicación de los datos Json ("/data/data.json") y la ruta donde queremos que se guarden los gráficos generados ("/images/").
 
