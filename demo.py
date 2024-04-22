@@ -1,6 +1,7 @@
 
 from matplotDraw import MatplotDraw
-from data.data import data
 
 matplotDraw1 = MatplotDraw()
+data = matplotDraw1.readFileJson("./data/data.json")
+matplotDraw1.pathEnd("./images/")
 matplotDraw1.getLineCharts(data)
