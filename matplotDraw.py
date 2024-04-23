@@ -1,4 +1,4 @@
-#Three lines to make our compiler able to draw:
+
 import json
 import matplotlib
 import numpy as np
@@ -45,9 +45,12 @@ class MatplotDraw:
 
     def corePlt(self, i:object)->None:
         matplotlib.use('Agg')
+        plt.figure(figsize=(10,6))
         plt.title(i['title'])
         plt.suptitle(i['suptitle'])
+        plt.subplots_adjust(bottom=0.15)
         plt.xlabel(i['xlabel'])
+        plt.xticks(rotation=50, fontsize=8)
         plt.ylabel(i['ylabel'])
         plt.plot(i['x'], i['y'])
         plt.grid(color = 'green', linestyle = '--', linewidth = 0.5)
