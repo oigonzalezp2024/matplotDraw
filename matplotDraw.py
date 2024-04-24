@@ -41,7 +41,7 @@ class MatplotDraw:
         self.product = product
 
     def chartName(self)->None:
-        self.name = str(self.city)+str(self.date)+str(self.product)
+        self.name = str(self.city)+str(self.product)
 
     def corePlt(self, i:object)->None:
         matplotlib.use('Agg')
